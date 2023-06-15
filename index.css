@@ -1,0 +1,513 @@
+:root {
+    --Header: #1D267D;
+    --Base: #FC4F00;
+    --white: #fff;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding: 10px 40px;
+    background-color: var(--Header);
+    color: var(--white);
+}
+
+header h1 {
+    float: left;
+    font-family: 'Times New Roman';
+    font-size: 2.3rem;
+}
+
+header p {
+    float: right;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--white);
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.441);
+}
+
+.NavMinHeight {
+    height: 60px;
+}
+
+.NavMaxHeight {
+    height: 327px;
+}
+
+.fa-bars {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    color: var(--Base);
+    display: none;
+    cursor: pointer;
+}
+
+nav>ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex: left;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul li a,
+nav>ul li p {
+    text-decoration: none;
+    color: var(--Header);
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav>ul li a:hover,
+nav>ul li p:hover {
+    color: var(--Base);
+}
+
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: 175px;
+    transform: translateX(-25px);
+    flex-direction: column;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.612);
+}
+
+#dropdown a {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#dropdown a:hover {
+    background-color: var(--Header);
+    color: var(--white);
+}
+
+#drop_link:hover #dropdown {
+    display: flex;
+}
+
+#Major {
+    width: 100%;
+    height: auto;
+}
+
+#Major img {
+    width: 100%;
+    height: 100%;
+}
+
+.Minor {
+    padding: 80px 40px;
+}
+
+.Minor h1 {
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-size: 1.9rem;
+}
+
+.Minor div {
+    display: flex;
+}
+
+.Minor div p {
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: 60px;
+    font-size: 1.15rem;
+    line-height: 35px;
+}
+
+.Minor div img {
+    box-shadow: 8px 8px 10px 0px gray;
+}
+
+.wrapper {
+    background: url('./images/bgbanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+.wrapper p {
+    color: var(--white);
+    text-align: center;
+    margin: 40px 0px;
+    width: 70%;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.wrapper button {
+    padding: 20px 40px;
+    outline: none;
+    border: 1px solid white;
+    color: var(--Base);
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.wrapper button:hover {
+    background-color: var(--Header);
+    color: var(--white);
+    border: 1px solid var(--Header);
+}
+
+.ProductContainer {
+    padding: 80px 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F6F9;
+
+}
+
+.ProductContainer h1 {
+    color: var(--Header);
+    font-family: 'Times New Roman';
+    font-size: 2.2rem;
+}
+
+.productswrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin: 30px 0px;
+}
+
+.productswrapper div {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 3px 8px 0px rgba(128, 128, 128, 0.201);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.productswrapper div img {
+    width: 90%;
+    height: auto;
+    margin: 20px 20px 5px 20px;
+}
+
+.productswrapper div h1 {
+    margin: 0px 30px;
+    height: 30px;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+}
+
+.productswrapper div a {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--Base);
+    color: var(--white);
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.productswrapper div a:hover {
+    opacity: 0.7;
+}
+
+.ProductContainer button {
+    padding: 20px;
+    border: 1px solid var(--Header);
+    background-color: var(--Header);
+    color: var(--white);
+    font-size: 1.46rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    padding: 40px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+footer>div {
+    color: var(--white);
+    width: 100%;
+}
+
+footer>div h1 {
+    font-size: 1rem;
+    color: var(--Base);
+    margin: 20px 10px;
+}
+
+
+footer>div p {
+    font-size: 1rem;
+    margin: 10px;
+    text-align: left;
+}
+
+footer>div p a {
+    font-size: 0.9rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer>div div {
+    background-color: var(--white);
+    float: left;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#facebook:hover {
+    background-color: #3b5998;
+    color: var(--white);
+}
+
+#facebook:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
+}
+
+#instagram:hover {
+    background-color: #FF78C4;
+    color: var(--white);
+}
+
+#instagram:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
+}
+
+#youtube:hover {
+    background-color: #C4302b;
+    color: var(--white);
+}
+
+#youtube:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.4s;
+}
+
+.foot {
+    width: 100%;
+    background-color: var(--Header);
+    padding: 10px 20px;
+}
+
+.foot h1 {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.Form_Wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form_Wrapper form {
+    width: 750px;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.441);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.Form_Wrapper form #FormInputs {
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Form_Wrapper form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0px 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Form_Wrapper form button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: var(--white);
+}
+
+.Form_Wrapper form button:nth-of-type(odd) {
+    background-color: var(--Header);
+}
+
+.Form_Wrapper form button:nth-of-type(even) {
+    background-color: var(--Base);
+}
+
+@media only screen and (max-width:1024px) {
+    .fa-bars {
+        display: block;
+    }
+
+    nav {
+        overflow: hidden;
+
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    header p {
+        font-size: 0.7rem;
+        margin-top: 7px;
+    }
+
+    nav>ul li a {
+        font-size: 0.9rem;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        width: 100%;
+        height: 270px;
+    }
+
+    nav>ul li {
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .Minor div img {
+        width: 320px;
+        height: 250px;
+    }
+
+    .Minor div p {
+        margin-right: 15px;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .wrapper h1 {
+        margin: 0px 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .Minor div {
+        flex-direction: column;
+    }
+
+    .Minor div p {
+        margin-right: 0px;
+    }
+
+    .Minor div img {
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .wrapper p {
+        margin: 30px 0px;
+        font-size: 1rem;
+        line-height: 27px;
+    }
+
+    .wrapper button {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .ProductContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .ProductContainer button {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .wrapper {
+        padding: 80px 0px;
+        height: auto;
+        background-position: left;
+    }
+}

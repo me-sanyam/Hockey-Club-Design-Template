@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Apparel</title>
+</head>
+
+<body>
+    <header>
+        <H1>The <span style="color: #FC4F00; font-family: 'Times New Roman';">Hockey</span> Club</H1>
+        <p>Current Date, Day</p>
+    </header>
+
+    <nav id="Nav" class="NavMinHeight">
+        <i class="fa fa-solid fa-bars" id="fabars"></i>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li style="position: relative;" id="drop_link">
+                <p>PRODUCTS</p>
+                <div id="dropdown">
+                    <a href="/equipements.html">EQUIPMENTS</a>
+                    <a href="/Gamewear.html">GAME WEARS</a>
+                    <a href="/Apparel.html">APPARELS</a>
+                </div>
+            </li>
+            <li><a href="/Orders.html">ORDER</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main class="Form_Wrapper">
+        <form>
+            <label id="formLabels">Product</label>
+            <select id="FormInputs">
+                <option value="">Select</option>
+                <option value="">CCM Core Senior Short Sleeve Tee Shirt</option>
+                <option value="">Bauer Supreme Lightweight Senior Jacket</option>
+                <option value="">Tru City Flyte Senior Training Shorts</option>
+                <option value="">Bauer New Era 39Thirty Youth Shadow Tech Stretch Fit Cap</option>
+                <option value="">Bauer Premium Senior Tapered Sweat Pants</option>
+                <option value="">Lizard Skin Arm Sleeve</option>
+                <option value="">Bauer Vapor X2.7 Senior Ice Hockey Skates</option>
+                <option value="">Bauer IMS 5.0 II Hockey Helmet Combo</option>
+                <option value="">Warrior Alpha DX SL Grip Senior Hockey Stick</option>
+                <option value="">CCM JetSpeed FT475 Senior Hockey Gloves</option>
+                <option value="">Sher-Wood 5030 Standard Senior Replacement Blade</option>
+                <option value="">Warrior AK27 Grip Standard Junior Hockey Shaft - Black/Gold</option>
+                <option value="">Warrior KH130 Youth Hockey Jersey - New York Rangers</option>
+                <option value="">CCM Junior Athletic Fit Long Sleeve Shirt W/Integreted Neck Protection</option>
+                <option value="">CMS M150 Refree Jersey</option>
+                <option value="">Toronto Mapple Leaf MonkeySports Mesh Hockey Socks</option>
+                <option value="">Bauer NG Women's Long Sleeve Grip Crew</option>
+                <option value="">Philadelphia Flyers Adidas AdiZero Authentic NHL Hockey Jersey</option>
+            </select>
+
+            <label id="formLabels">Quantity</label>
+            <input type="number" id="FormInputs">
+
+            <label id="formLabels">Payment Method</label>
+            <div style="margin-top: 20px;">
+                <input type="radio">
+                <label for="">Credit/Debit Card</label>
+            </div>
+            <div style="margin-top: 5px;">
+                <input type="radio">
+                <label for="">Internet Banking</label>
+            </div>
+            <div style="margin-top: 5px;">
+                <input type="radio">
+                <label for="">Cash on delivey</label>
+            </div>
+            <div style="margin-top: 5px; margin-bottom: 20px;">
+                <input type="radio">
+                <label for="">Other Wallets</label>
+            </div>
+
+            <label id="formLabels">Name</label>
+            <input type="text" id="FormInputs" placeholder="Enter Your Name">
+
+            <label id="formLabels">Email</label>
+            <input type="email" id="FormInputs" placeholder="Enter Your Email">
+
+
+            <label id="formLabels">Phone</label>
+            <input type="text" id="FormInputs" placeholder="Enter Your Phone Number">
+
+            <label id="formLabels">Mode</label>
+            <div style="margin-top: 20px;">
+                <input type="checkbox">
+                <label for="">Pickup</label>
+            </div>
+            <div style="margin-top: 5px; margin-bottom: 20px;">
+                <input type="checkbox">
+                <label for="">Delivery</label>
+            </div>
+
+            <label id="formLabels">Delivery Address</label>
+            <input type="text" id="FormInputs" style="margin-bottom: 10px;">
+            <input type="text" id="FormInputs" style="margin-top: 0%;">
+
+
+            <label id="formLabels">City</label>
+            <input type="text" id="FormInputs" placeholder="Enter Your City">
+
+            <label id="formLabels">Zip Code</label>
+            <input type="text" id="FormInputs" placeholder="Enter Your Zipcode">
+
+
+            <label id="formLabels">Country</label>
+            <select id="FormInputs">
+                <option value="">Select</option>
+                <option value="">India</option>
+                <option value="">America</option>
+                <option value="">Canada</option>
+                <option value="">Germany</option>
+                <option value="">Kenya</option>
+                <option value="">Holand</option>
+                <option value="">Poland</option>
+            </select>
+
+            <label id="formLabels">Comments</label>
+            <textarea placeholder="Message"></textarea>
+
+            <button>Submit</button>
+            <button>Reset</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <h1>Address</h1>
+            <p>
+                <i>141, Green Road, Abbotsford,
+                    <br>
+                    British Columbia, Canada
+                </i>
+            </p>
+        </div>
+
+        <div>
+            <h1>Contact</h1>
+            <p>(604) 688-0388</p>
+            <p>hardik.sharma1@student.ufv.ca</p>
+        </div>
+
+        <div>
+            <h1>Quick Links</h1>
+            <p><a href="/">HOME</a></p>
+            <p><a href="/Orders.html">ORDER</a></p>
+            <p><a href="/contact.html">CONTACT</a></p>
+        </div>
+
+        <div>
+            <h1>Social Media</h1>
+            <div id="facebook"><i class="fa fa-brands fa-facebook-f"></i></div>
+            <div id="instagram"><i class="fa fa-brands fa-instagram"></i></div>
+            <div id="youtube"><i class="fa fa-brands fa-youtube"></i></div>
+        </div>
+    </footer>
+    <div class="foot">
+        <h1>Copyright <i class="fa fa-light fa-copyright"></i>2022</h1>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+
+</html>
